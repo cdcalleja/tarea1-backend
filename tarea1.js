@@ -21,7 +21,7 @@ app.get('/suma/:num1/:num2', (req, res) => {
     res.json(resultado);
     console.log(req.params, resultado);
     console.log(num1, num2);
-    // console.log(typeof num1); //sacandole la conversión Number
+
 });
 
 //debe restar dos números y si uno de los números es cero decir que no se puede restar (uso de params).
@@ -39,7 +39,7 @@ app.get('/resta/:num1/:num2', (req, res) => {
 })
 
 
-//Mostrar nombre y apellido (uso de query).
+//Mostrar nombre y apellido, edad, altura y nacionalidad (uso de query).
 
 app.get('/usuario', (req, res) => {
     let nombre = req.query.nombre;
